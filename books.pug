@@ -1,0 +1,13 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title
+    body
+        h1 these r books
+            ul
+                each book in books
+                    li
+                        p= book.name
+                        p=`by ${book.author.name}`
+                        
